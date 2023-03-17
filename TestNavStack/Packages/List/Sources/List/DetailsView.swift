@@ -31,6 +31,15 @@ final class DetailsViewModel: ObservableObject {
     }
 }
 
+public final class ServiceFactory {
+    public static func getRegistry(/* Опционально передать нужные параметры для создания всех сервисов */) -> ServiceRegistry {
+        let registry = ServiceRegistry()
+//        registry.register(SomeService(), as: SomeServiceProtocol.self)
+        registry.register(SomeBarService(), as: SomeBarServiceProtocol.self)
+        return registry
+    }
+}
+
 public protocol SomeServiceProtocol {
     func foo()
 }
@@ -53,11 +62,6 @@ public final class SomeBarService: SomeBarServiceProtocol {
     }
 }
 
-public final class ServiceFactory {
-    public static func getRegistry(/* Опционально передать нужные параметры для создания всех сервисов */) -> ServiceRegistry {
-        let registry = ServiceRegistry()
-        registry.register(SomeService(), as: SomeServiceProtocol.self)
-        registry.register(SomeBarService(), as: SomeBarServiceProtocol.self)
-        return registry
-    }
+extension Container {
+    
 }
