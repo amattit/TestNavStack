@@ -25,5 +25,16 @@ let package = Package(
         .testTarget(
             name: "ServiceLocatorTests",
             dependencies: ["ServiceLocatorService"]),
+        .plugin(
+            name: "GenerateContributors", capability: .command(
+                intent: .custom(
+                    verb: "regenerate-contributors-list",
+                    description: "Generate Contributors.txt file based on git log"
+                ),
+                permissions: [
+                    .writeToPackageDirectory(reason: "This command write the new CONTRIBUTORS.txt to the source root")
+                ]
+            )
+        )
     ]
 )

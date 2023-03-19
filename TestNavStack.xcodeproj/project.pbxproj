@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E3215D829C75ECB00438BC6 /* ServiceLocatorService in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3215D729C75ECB00438BC6 /* ServiceLocatorService */; };
 		7EA44CA929BE29F600650FA6 /* TestNavStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA44CA829BE29F600650FA6 /* TestNavStackApp.swift */; };
 		7EA44CAB29BE29F600650FA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA44CAA29BE29F600650FA6 /* ContentView.swift */; };
 		7EA44CAD29BE29F800650FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA44CAC29BE29F800650FA6 /* Assets.xcassets */; };
@@ -14,7 +15,6 @@
 		7EA44CB729BE679500650FA6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA44CB629BE679500650FA6 /* SettingsViewModel.swift */; };
 		7EA44CC029C243AA00650FA6 /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA44CBF29C243AA00650FA6 /* Settings */; };
 		7EA44CC429C2443300650FA6 /* List in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA44CC329C2443300650FA6 /* List */; };
-		7EA44CCA29C25F7100650FA6 /* ServiceLocatorService in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA44CC929C25F7100650FA6 /* ServiceLocatorService */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EA44CC429C2443300650FA6 /* List in Frameworks */,
-				7EA44CCA29C25F7100650FA6 /* ServiceLocatorService in Frameworks */,
+				7E3215D829C75ECB00438BC6 /* ServiceLocatorService in Frameworks */,
 				7EA44CC029C243AA00650FA6 /* Settings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +117,7 @@
 			packageProductDependencies = (
 				7EA44CBF29C243AA00650FA6 /* Settings */,
 				7EA44CC329C2443300650FA6 /* List */,
-				7EA44CC929C25F7100650FA6 /* ServiceLocatorService */,
+				7E3215D729C75ECB00438BC6 /* ServiceLocatorService */,
 			);
 			productName = TestNavStack;
 			productReference = 7EA44CA529BE29F600650FA6 /* TestNavStack.app */;
@@ -148,7 +148,6 @@
 			);
 			mainGroup = 7EA44C9C29BE29F600650FA6;
 			packageReferences = (
-				7E820C5829C4F3420001BE32 /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */,
 			);
 			productRefGroup = 7EA44CA629BE29F600650FA6 /* Products */;
 			projectDirPath = "";
@@ -380,18 +379,11 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		7E820C5829C4F3420001BE32 /* XCRemoteSwiftPackageReference "SwiftLintPlugin" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lukepistrol/SwiftLintPlugin";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.2.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
 /* Begin XCSwiftPackageProductDependency section */
+		7E3215D729C75ECB00438BC6 /* ServiceLocatorService */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ServiceLocatorService;
+		};
 		7EA44CBF29C243AA00650FA6 /* Settings */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Settings;
@@ -399,10 +391,6 @@
 		7EA44CC329C2443300650FA6 /* List */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = List;
-		};
-		7EA44CC929C25F7100650FA6 /* ServiceLocatorService */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = ServiceLocatorService;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
