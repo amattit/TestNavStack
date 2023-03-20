@@ -27,17 +27,6 @@ struct ContentView: View {
                                 Image(systemName: "list.dash")
                             }
                         }
-                case .settings:
-                    
-                    SettingsView(viewModel: .init())
-                        .tag(tab)
-                        .tabItem {
-                            Label {
-                                Text("Settings")
-                            } icon: {
-                                Image(systemName: "gear")
-                            }
-                        }
                 case .profile:
                     Root<ProfileView, TabNavigation.ProfileNavigation> { stack in
                         ProfileView()
@@ -85,12 +74,7 @@ struct ContentView_Previews: PreviewProvider {
 
 enum TabNavigation: Hashable, CaseIterable {
     case list
-    case settings
     case profile
-    
-    
-    
-    
     
     enum ProfileNavigation: Hashable {
         

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7E5B4CDC29C83A2B00E4BB28 /* List in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5B4CDB29C83A2B00E4BB28 /* List */; };
-		7E5B4CDE29C83A3100E4BB28 /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5B4CDD29C83A3100E4BB28 /* Settings */; };
 		7E5B4CE029C83A4D00E4BB28 /* ServiceLocatorService in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5B4CDF29C83A4D00E4BB28 /* ServiceLocatorService */; };
 		7E673DDA29C83EBD00C89372 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E673DD929C83EBD00C89372 /* info.plist */; };
 		7EA44CA929BE29F600650FA6 /* TestNavStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA44CA829BE29F600650FA6 /* TestNavStackApp.swift */; };
@@ -19,10 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E5B4CD829C83A0100E4BB28 /* Settings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Settings; path = TestNavStack/Packages/Settings; sourceTree = "<group>"; };
 		7E5B4CD929C83A1200E4BB28 /* List */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = List; path = TestNavStack/Packages/List; sourceTree = "<group>"; };
 		7E5B4CDA29C83A1F00E4BB28 /* ServiceLocatorService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ServiceLocatorService; path = TestNavStack/Packages/ServiceLocatorService; sourceTree = "<group>"; };
 		7E673DD929C83EBD00C89372 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		7E673DDD29C847CD00C89372 /* Settings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Settings; path = TestNavStack/Packages/Settings; sourceTree = "<group>"; };
 		7EA44CA529BE29F600650FA6 /* TestNavStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNavStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA44CA829BE29F600650FA6 /* TestNavStackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavStackApp.swift; sourceTree = "<group>"; };
 		7EA44CAA29BE29F600650FA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +37,6 @@
 			files = (
 				7E5B4CDC29C83A2B00E4BB28 /* List in Frameworks */,
 				7E5B4CE029C83A4D00E4BB28 /* ServiceLocatorService in Frameworks */,
-				7E5B4CDE29C83A3100E4BB28 /* Settings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,9 +92,9 @@
 		7EA44CC129C2442100650FA6 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				7E5B4CD829C83A0100E4BB28 /* Settings */,
 				7E5B4CD929C83A1200E4BB28 /* List */,
 				7E5B4CDA29C83A1F00E4BB28 /* ServiceLocatorService */,
+				7E673DDD29C847CD00C89372 /* Settings */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -119,7 +117,6 @@
 			name = TestNavStack;
 			packageProductDependencies = (
 				7E5B4CDB29C83A2B00E4BB28 /* List */,
-				7E5B4CDD29C83A3100E4BB28 /* Settings */,
 				7E5B4CDF29C83A4D00E4BB28 /* ServiceLocatorService */,
 			);
 			productName = TestNavStack;
@@ -389,10 +386,6 @@
 		7E5B4CDB29C83A2B00E4BB28 /* List */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = List;
-		};
-		7E5B4CDD29C83A3100E4BB28 /* Settings */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = Settings;
 		};
 		7E5B4CDF29C83A4D00E4BB28 /* ServiceLocatorService */ = {
 			isa = XCSwiftPackageProductDependency;
