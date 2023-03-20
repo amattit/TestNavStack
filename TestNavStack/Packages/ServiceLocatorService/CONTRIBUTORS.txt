@@ -1,0 +1,2 @@
+All Service is registered
+/Users/mihailseregin/Desktop/TestNavStack/TestNavStack/Packages/ServiceLocatorService

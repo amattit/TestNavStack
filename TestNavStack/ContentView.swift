@@ -8,8 +8,10 @@
 import SwiftUI
 import List
 import Settings
+import ServiceLocatorService
 
 struct ContentView: View {
+    @Service var contentViewService: ContentView
     @State var selectedTab: TabNavigation = .list
     var body: some View {
         TabView(selection: $selectedTab) {

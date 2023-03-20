@@ -26,10 +26,10 @@ let package = Package(
             name: "ServiceLocatorTests",
             dependencies: ["ServiceLocatorService"]),
         .plugin(
-            name: "GenerateContributors", capability: .command(
+            name: "FindNotImplementedServices", capability: .command(
                 intent: .custom(
-                    verb: "regenerate-contributors-list",
-                    description: "Generate Contributors.txt file based on git log"
+                    verb: "regenerate-not-implemented-services",
+                    description: "Generate NotImplemented.txt file based on git log"
                 ),
                 permissions: [
                     .writeToPackageDirectory(reason: "This command write the new CONTRIBUTORS.txt to the source root")
@@ -37,4 +37,5 @@ let package = Package(
             )
         )
     ]
+    
 )

@@ -5,9 +5,7 @@
 //  Created by Михаил Серегин on 15.03.2023.
 //
 
-import Foundation
 import SwiftUI
-import ServiceLocatorService
 
 struct DetailsView: View {
     @ObservedObject var viewModel: DetailsViewModel
@@ -19,14 +17,3 @@ struct DetailsView: View {
     }
 }
 
-final class DetailsViewModel: ObservableObject {
-    let details: ListItem
-    @Service var someService: SomeServiceProtocol
-    @Service var someBarService: SomeBarServiceProtocol
-    	
-    init(details: ListItem) {
-        self.details = details
-        someService.foo()
-        someBarService.bar()
-    }
-}

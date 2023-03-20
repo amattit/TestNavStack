@@ -7,26 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E3215D829C75ECB00438BC6 /* ServiceLocatorService in Frameworks */ = {isa = PBXBuildFile; productRef = 7E3215D729C75ECB00438BC6 /* ServiceLocatorService */; };
+		7E5B4CDC29C83A2B00E4BB28 /* List in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5B4CDB29C83A2B00E4BB28 /* List */; };
+		7E5B4CDE29C83A3100E4BB28 /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5B4CDD29C83A3100E4BB28 /* Settings */; };
+		7E5B4CE029C83A4D00E4BB28 /* ServiceLocatorService in Frameworks */ = {isa = PBXBuildFile; productRef = 7E5B4CDF29C83A4D00E4BB28 /* ServiceLocatorService */; };
+		7E673DDA29C83EBD00C89372 /* info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E673DD929C83EBD00C89372 /* info.plist */; };
 		7EA44CA929BE29F600650FA6 /* TestNavStackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA44CA829BE29F600650FA6 /* TestNavStackApp.swift */; };
 		7EA44CAB29BE29F600650FA6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA44CAA29BE29F600650FA6 /* ContentView.swift */; };
 		7EA44CAD29BE29F800650FA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA44CAC29BE29F800650FA6 /* Assets.xcassets */; };
 		7EA44CB029BE29F800650FA6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA44CAF29BE29F800650FA6 /* Preview Assets.xcassets */; };
 		7EA44CB729BE679500650FA6 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA44CB629BE679500650FA6 /* SettingsViewModel.swift */; };
-		7EA44CC029C243AA00650FA6 /* Settings in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA44CBF29C243AA00650FA6 /* Settings */; };
-		7EA44CC429C2443300650FA6 /* List in Frameworks */ = {isa = PBXBuildFile; productRef = 7EA44CC329C2443300650FA6 /* List */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E5B4CD829C83A0100E4BB28 /* Settings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Settings; sourceTree = "<group>"; };
+		7E5B4CD929C83A1200E4BB28 /* List */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = List; path = TestNavStack/Packages/List; sourceTree = "<group>"; };
+		7E5B4CDA29C83A1F00E4BB28 /* ServiceLocatorService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ServiceLocatorService; path = TestNavStack/Packages/ServiceLocatorService; sourceTree = "<group>"; };
+		7E673DD929C83EBD00C89372 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		7EA44CA529BE29F600650FA6 /* TestNavStack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestNavStack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA44CA829BE29F600650FA6 /* TestNavStackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestNavStackApp.swift; sourceTree = "<group>"; };
 		7EA44CAA29BE29F600650FA6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7EA44CAC29BE29F800650FA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EA44CAF29BE29F800650FA6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7EA44CB629BE679500650FA6 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		7EA44CBC29C2435500650FA6 /* Settings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Settings; sourceTree = "<group>"; };
-		7EA44CC229C2442100650FA6 /* List */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = List; path = TestNavStack/Packages/List; sourceTree = "<group>"; };
-		7EA44CC829C25F6900650FA6 /* ServiceLocatorService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ServiceLocatorService; path = TestNavStack/Packages/ServiceLocatorService; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,9 +36,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EA44CC429C2443300650FA6 /* List in Frameworks */,
-				7E3215D829C75ECB00438BC6 /* ServiceLocatorService in Frameworks */,
-				7EA44CC029C243AA00650FA6 /* Settings in Frameworks */,
+				7E5B4CDC29C83A2B00E4BB28 /* List in Frameworks */,
+				7E5B4CE029C83A4D00E4BB28 /* ServiceLocatorService in Frameworks */,
+				7E5B4CDE29C83A3100E4BB28 /* Settings in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +71,7 @@
 				7EA44CAC29BE29F800650FA6 /* Assets.xcassets */,
 				7EA44CAE29BE29F800650FA6 /* Preview Content */,
 				7EA44CB629BE679500650FA6 /* SettingsViewModel.swift */,
+				7E673DD929C83EBD00C89372 /* info.plist */,
 			);
 			path = TestNavStack;
 			sourceTree = "<group>";
@@ -91,9 +94,9 @@
 		7EA44CC129C2442100650FA6 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				7EA44CBC29C2435500650FA6 /* Settings */,
-				7EA44CC229C2442100650FA6 /* List */,
-				7EA44CC829C25F6900650FA6 /* ServiceLocatorService */,
+				7E5B4CD829C83A0100E4BB28 /* Settings */,
+				7E5B4CD929C83A1200E4BB28 /* List */,
+				7E5B4CDA29C83A1F00E4BB28 /* ServiceLocatorService */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -115,9 +118,9 @@
 			);
 			name = TestNavStack;
 			packageProductDependencies = (
-				7EA44CBF29C243AA00650FA6 /* Settings */,
-				7EA44CC329C2443300650FA6 /* List */,
-				7E3215D729C75ECB00438BC6 /* ServiceLocatorService */,
+				7E5B4CDB29C83A2B00E4BB28 /* List */,
+				7E5B4CDD29C83A3100E4BB28 /* Settings */,
+				7E5B4CDF29C83A4D00E4BB28 /* ServiceLocatorService */,
 			);
 			productName = TestNavStack;
 			productReference = 7EA44CA529BE29F600650FA6 /* TestNavStack.app */;
@@ -165,6 +168,7 @@
 			files = (
 				7EA44CB029BE29F800650FA6 /* Preview Assets.xcassets in Resources */,
 				7EA44CAD29BE29F800650FA6 /* Assets.xcassets in Resources */,
+				7E673DDA29C83EBD00C89372 /* info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +313,7 @@
 				DEVELOPMENT_TEAM = 8FR82B7BH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestNavStack/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -338,6 +343,7 @@
 				DEVELOPMENT_TEAM = 8FR82B7BH7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestNavStack/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -380,17 +386,17 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7E3215D729C75ECB00438BC6 /* ServiceLocatorService */ = {
+		7E5B4CDB29C83A2B00E4BB28 /* List */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = ServiceLocatorService;
+			productName = List;
 		};
-		7EA44CBF29C243AA00650FA6 /* Settings */ = {
+		7E5B4CDD29C83A3100E4BB28 /* Settings */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Settings;
 		};
-		7EA44CC329C2443300650FA6 /* List */ = {
+		7E5B4CDF29C83A4D00E4BB28 /* ServiceLocatorService */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = List;
+			productName = ServiceLocatorService;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

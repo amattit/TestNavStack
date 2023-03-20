@@ -62,7 +62,7 @@ struct GenerateContributors: CommandPlugin {
             contributors.append(.init(stringLiteral: "All Service is registered"))
         }
         
-        try contributors.joined(separator: "\n").write(toFile: "CONTRIBUTORS.txt", atomically: true, encoding: .utf8)
+        try contributors.joined(separator: "\n").write(toFile: "NotImplemented.txt", atomically: true, encoding: .utf8)
     }
     
     func recursiveScan(for url: URL) throws -> [URL] {
@@ -124,9 +124,7 @@ struct GenerateContributors: CommandPlugin {
         let type = string.split(separator: " ")
             .last ?? ""
         if string.last == ")" {
-            var type = String(type.dropLast(1))
-            let result = type.replacingOccurrences(of: ".self", with: "")
-            return result
+            return String(type.dropLast(1)).replacingOccurrences(of: ".self", with: "")
         } else {
             return String(type)
         }

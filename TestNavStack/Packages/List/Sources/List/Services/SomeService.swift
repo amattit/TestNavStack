@@ -7,13 +7,13 @@
 
 import Foundation
 
-public protocol SomeServiceProtocol {
+protocol SomeServiceProtocol {
     func foo()
 }
 
-public final class SomeService: SomeServiceProtocol {
-    public init() {}
-    public func foo() {
+final class SomeService1: SomeServiceProtocol {
+    init() {}
+    func foo() {
         print("bar")
     }
 }
