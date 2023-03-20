@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7E5B4CD829C83A0100E4BB28 /* Settings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Settings; sourceTree = "<group>"; };
+		7E5B4CD829C83A0100E4BB28 /* Settings */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Settings; path = TestNavStack/Packages/Settings; sourceTree = "<group>"; };
 		7E5B4CD929C83A1200E4BB28 /* List */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = List; path = TestNavStack/Packages/List; sourceTree = "<group>"; };
 		7E5B4CDA29C83A1F00E4BB28 /* ServiceLocatorService */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ServiceLocatorService; path = TestNavStack/Packages/ServiceLocatorService; sourceTree = "<group>"; };
 		7E673DD929C83EBD00C89372 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
