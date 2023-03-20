@@ -11,6 +11,7 @@ let package = Package(
         .library(
             name: "ServiceLocatorService",
             targets: ["ServiceLocatorService"]),
+        .plugin(name: "FindNotImplementedServices", targets: ["FindNotImplementedServices"])
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
