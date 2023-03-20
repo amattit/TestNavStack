@@ -70,55 +70,6 @@ struct ListView: View {
     }
 }
 
-class ListViewModel: ObservableObject {
-    @Published var items: [ListItem] = [
-        .init(id: UUID().uuidString, title: "первый"),
-        .init(id: UUID().uuidString, title: "второй"),
-        .init(id: UUID().uuidString, title: "третий"),
-        .init(id: UUID().uuidString, title: "четвертый"),
-        .init(id: UUID().uuidString, title: "пятый"),
-        .init(id: UUID().uuidString, title: "первый"),
-        .init(id: UUID().uuidString, title: "второй"),
-        .init(id: UUID().uuidString, title: "третий"),
-        .init(id: UUID().uuidString, title: "четвертый"),
-        .init(id: UUID().uuidString, title: "пятый"),
-        .init(id: UUID().uuidString, title: "первый"),
-        .init(id: UUID().uuidString, title: "второй"),
-        .init(id: UUID().uuidString, title: "третий"),
-        .init(id: UUID().uuidString, title: "четвертый"),
-        .init(id: UUID().uuidString, title: "пятый"),
-        .init(id: UUID().uuidString, title: "первый"),
-        .init(id: UUID().uuidString, title: "второй"),
-        .init(id: UUID().uuidString, title: "третий"),
-        .init(id: UUID().uuidString, title: "четвертый"),
-        .init(id: UUID().uuidString, title: "пятый"),
-        .init(id: UUID().uuidString, title: "первый"),
-        .init(id: UUID().uuidString, title: "второй"),
-        .init(id: UUID().uuidString, title: "третий"),
-        .init(id: UUID().uuidString, title: "четвертый"),
-        .init(id: UUID().uuidString, title: "пятый"),
-        .init(id: UUID().uuidString, title: "первый"),
-        .init(id: UUID().uuidString, title: "второй"),
-        .init(id: UUID().uuidString, title: "третий"),
-        .init(id: UUID().uuidString, title: "четвертый"),
-        .init(id: UUID().uuidString, title: "пятый"),
-        .init(id: UUID().uuidString, title: "первый"),
-        .init(id: UUID().uuidString, title: "второй"),
-        .init(id: UUID().uuidString, title: "третий"),
-        .init(id: UUID().uuidString, title: "четвертый"),
-        .init(id: UUID().uuidString, title: "пятый"),
-        .init(id: UUID().uuidString, title: "первый"),
-        .init(id: UUID().uuidString, title: "второй"),
-        .init(id: UUID().uuidString, title: "третий"),
-        .init(id: UUID().uuidString, title: "четвертый"),
-        .init(id: UUID().uuidString, title: "пятый"),
-    ]
-    
-    public init() {
-        
-    }
-}
-
 enum ListNavigation: Hashable {
     case details(String)
     case detail(ListItem)

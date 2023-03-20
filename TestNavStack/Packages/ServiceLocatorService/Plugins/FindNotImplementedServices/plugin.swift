@@ -11,21 +11,6 @@ import Foundation
 @main
 struct GenerateContributors: CommandPlugin {
     func performCommand(context: PackagePlugin.PluginContext, arguments: [String]) async throws {
-//        let process = Process()
-//        process.executableURL = URL(fileURLWithPath: "/usr/bin/git")
-//        process.arguments = ["log", "--pretty=format:- %an <%ae>%n"]
-//
-//        let outputPipe = Pipe()
-//        process.standardOutput = outputPipe
-//
-//        try process.run()
-//        process.waitUntilExit()
-//
-//        let outputData = try outputPipe.fileHandleForReading.readToEnd()
-//        guard let outputData, let output = String(data: outputData, encoding: .utf8) else {
-//            return
-//        }
-        
         var contributors: [String.SubSequence] = []
         
         let urlString = FileManager.default.currentDirectoryPath
@@ -35,7 +20,6 @@ struct GenerateContributors: CommandPlugin {
         try recursiveScan(for: url).forEach {
             checkInjection(for: $0).forEach { value in
                 injections.append(value)
-//                contributors.append(.init(stringLiteral: "Injected \(value.type) in \(value.file)"))
             }
         }
         
@@ -43,14 +27,11 @@ struct GenerateContributors: CommandPlugin {
         try recursiveScan(for: url).forEach({ url in
             checkServiceRegistration(for: url, and: injections).forEach {
                 registrations.append($0)
-//                contributors.append(.init(stringLiteral: "\($0.type) is registeres at \($0.file)"))
             }
         })
         
-        // TODO: Из списка инъекций удалить все типы, которые есть в регистрациях
-        
         let diff = injections.filter { inj in
-            !registrations.map(\.type).contains { $0 != inj.type }
+            !registrations.map(\.type).contains { $0 == inj.type }
         }
         
         for inj in diff {

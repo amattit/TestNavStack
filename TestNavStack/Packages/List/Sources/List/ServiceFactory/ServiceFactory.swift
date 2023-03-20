@@ -13,6 +13,7 @@ public final class ServiceFactory {
         let registry = ServiceRegistry()
         registry.register(SomeService1(), as: SomeServiceProtocol.self)
         registry.register(SomeBarService(), as: SomeBarServiceProtocol.self)
+        registry.register(OtherService(), as: OtherServiceProtocol.self)
         return registry
     }
 }

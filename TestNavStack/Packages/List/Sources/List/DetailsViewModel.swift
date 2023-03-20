@@ -12,7 +12,7 @@ final class DetailsViewModel: ObservableObject {
     let details: ListItem
     @Service var someService: SomeServiceProtocol
     @Service var someBarService: SomeBarServiceProtocol
-        
+    
     init(details: ListItem) {
         self.details = details
         someService.foo()
